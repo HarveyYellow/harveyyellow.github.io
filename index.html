@@ -4,138 +4,182 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Jingyuan Huang is a Computer Science PhD student at the University of Georgia, advised by Ninghao Liu. Research interests include OPD-based model merging, agentic computer use, and model testing and evaluation.">
-    <link rel="stylesheet" href="jemdoc.css" type="text/css">
+    <meta name="theme-color" content="#b45309">
+    <meta property="og:title" content="Jingyuan Huang | University of Georgia">
+    <meta property="og:description" content="Research in model merging, computer-use agents, and model testing and evaluation.">
+    <meta property="og:image" content="https://harveyyellow.github.io/hjy.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harveyyellow.github.io/">
+    <link rel="canonical" href="https://harveyyellow.github.io/">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/minimal-light.css">
+    <link rel="stylesheet" href="assets/css/publications.css">
+    <link rel="stylesheet" href="assets/css/orange.css">
     <title>Jingyuan Huang | Computer Science PhD Student at UGA</title>
 </head>
 <body>
-<main id="layout-content">
-    <header class="profile">
-        <div class="profile-info">
-            <div id="toptitle">
-                <h1>Jingyuan Huang</h1>
-            </div>
-            <p class="profile-role">PhD Student in Computer Science</p>
-            <p>
-                University of Georgia<br>
-                Athens, Georgia, USA
-            </p>
-            <p>E-mail: <a href="mailto:jh19696@uga.edu">jh19696@uga.edu</a></p>
-            <nav class="profile-links" aria-label="Profile links">
-                <a href="cv.pdf">Curriculum Vitae</a>
-                <a href="https://scholar.google.com/citations?user=MfoZS_AAAAAJ&amp;hl=en">Google Scholar</a>
-                <a href="https://github.com/HarveyYellow">GitHub</a>
-            </nav>
-        </div>
-        <img class="profile-photo" src="hjy.jpg" alt="Portrait of Jingyuan Huang" width="200">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="wrapper">
+    <header class="profile" aria-label="Jingyuan Huang's profile">
+        <a class="image avatar" href="#about-me" aria-label="About Jingyuan Huang">
+            <img src="hjy.jpg" alt="Jingyuan Huang" width="160" height="160">
+        </a>
+        <h1>Jingyuan Huang</h1>
+        <p class="position">PhD Student in Computer Science</p>
+        <p class="affiliation">University of Georgia</p>
+        <p class="location">Athens, Georgia, USA</p>
+        <a class="email" href="mailto:jh19696@uga.edu">jh19696@uga.edu</a>
+        <nav class="social-links" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?user=MfoZS_AAAAAJ&amp;hl=en" title="Google Scholar">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11v6c4 3 8 3 12 0v-6M22 9v8"/></svg>
+                <span>Scholar</span>
+            </a>
+            <a href="cv.pdf" title="Curriculum Vitae">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg>
+                <span>CV</span>
+            </a>
+            <a href="https://github.com/HarveyYellow" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="5" r="2.5"/><circle cx="7" cy="19" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M7 7.5v9M18 8.5v1c0 4-11 2-11 6"/></svg>
+                <span>GitHub</span>
+            </a>
+        </nav>
+        <nav class="section-links" aria-label="On this page">
+            <a href="#about-me">About</a>
+            <a href="#research-interests">Research</a>
+            <a href="#publications">Publications</a>
+        </nav>
     </header>
 
-    <section aria-labelledby="biography">
-        <h2 id="biography">Biography</h2>
-        <p>
-            I am a PhD student in Computer Science at the University of Georgia, advised by
-            <a href="https://scholar.google.com/citations?user=Nir-EDYAAAAJ&amp;hl=en">Prof. Ninghao Liu</a>.
-            My current research focuses on <strong>model merging through on-policy distillation (OPD)</strong>,
-            with the goal of combining complementary capabilities from multiple models into a single model.
-            I also explore <strong>computer-use agents (CUA)</strong>.
-        </p>
-    </section>
+    <main id="main-content">
+        <section class="intro" aria-labelledby="about-me">
+            <h2 id="about-me">About Me</h2>
+            <p>
+                I am a PhD student in Computer Science at the <strong>University of Georgia</strong>,
+                advised by <a href="https://scholar.google.com/citations?user=Nir-EDYAAAAJ&amp;hl=en">Prof. Ninghao Liu</a>.
+            </p>
+            <p>
+                My current research focuses on <strong>model merging through on-policy distillation (OPD)</strong>,
+                with the goal of combining complementary capabilities from multiple models into a single model.
+                I also explore <strong>computer-use agents (CUA)</strong>.
+            </p>
+        </section>
 
-    <section aria-labelledby="research-interests">
-        <h2 id="research-interests">Research Interests</h2>
-        <ul class="research-list">
-            <li><strong>Multi-model capability merging:</strong> combining complementary model capabilities, with a focus on OPD-based model merging.</li>
-            <li><strong>Agentic CUA:</strong> computer-use agents that perceive, reason about, and interact with digital environments.</li>
-            <li><strong>Model testing and evaluation:</strong> assessing model capabilities, performance, reliability, and limitations.</li>
-        </ul>
-    </section>
+        <section aria-labelledby="research-interests">
+            <h2 id="research-interests">Research Interests</h2>
+            <ul class="research-list">
+                <li><strong>Multi-model capability merging</strong> — combining complementary capabilities through OPD-based model merging.</li>
+                <li><strong>Agentic CUA</strong> — agents that perceive, reason about, and interact with digital environments.</li>
+                <li><strong>Model testing and evaluation</strong> — assessing capabilities, performance, reliability, and limitations.</li>
+            </ul>
+        </section>
 
-    <section aria-labelledby="publications">
-        <h2 id="publications">Publications &amp; Preprints</h2>
-        <p class="publication-note">
-            See <a href="https://scholar.google.com/citations?user=MfoZS_AAAAAJ&amp;hl=en">Google Scholar</a>
-            for the latest publication list and citations. * denotes equal contribution.
-        </p>
+        <section class="publications" aria-labelledby="publications">
+            <h2 id="publications">Selected Publications</h2>
+            <p class="publication-note">* Equal contribution. See <a href="https://scholar.google.com/citations?user=MfoZS_AAAAAJ&amp;hl=en">Google Scholar</a> for the latest list and citations.</p>
+            <!-- Bibliography verified against Google Scholar and primary publication pages on November 1, 2026.
+                 Train4Merge uses its current arXiv v3 title; FairLocator uses its EMNLP title.
+                 Figure sources and theme provenance are documented in README.md. -->
+            <ol class="bibliography">
+            <li class="pub-row">
+                <a class="paper-figure" href="https://arxiv.org/abs/2609.32303" aria-label="Read Train4Merge: RL or SFT—Which Yields Better Teachers for OPD-Based Model Merging?">
+                    <img src="assets/img/train4merge.svg" alt="Teacher training and on-policy distillation results from Train4Merge" loading="lazy" width="240" height="160">
+                    <span class="badge">arXiv 2026</span>
+                </a>
+                <div class="paper-details">
+                    <h3 class="title"><a class="paper-title" href="https://arxiv.org/abs/2609.32303">Train4Merge: RL or SFT&mdash;Which Yields Better Teachers for OPD-Based Model Merging?</a></h3>
+                    <p class="author"><strong>Jingyuan Huang</strong>, Zuming Huang, Yucheng Shi, Zhongzhi Li, Xiaoming Zhai, Wei Chu, Ninghao Liu.</p>
+                    <p class="periodical"><em>arXiv preprint, 2026.</em></p>
+                    <div class="links"><a class="btn" href="https://arxiv.org/abs/2609.32303">Paper</a><a class="btn" href="https://arxiv.org/pdf/2609.32303">PDF</a></div>
+                </div>
+            </li>
+            <li class="pub-row">
+                <a class="paper-figure" href="https://arxiv.org/abs/2606.18101" aria-label="Read Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding">
+                    <img src="assets/img/gui-grounding.svg" alt="Overview of quality-aware self-distillation for GUI grounding" loading="lazy" width="240" height="160">
+                    <span class="badge">arXiv 2026</span>
+                </a>
+                <div class="paper-details">
+                    <h3 class="title"><a class="paper-title" href="https://arxiv.org/abs/2606.18101">Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding</a></h3>
+                    <p class="author"><strong>Jingyuan Huang</strong>, Zuming Huang, Yucheng Shi, Tianze Yang, Xiaoming Zhai, Wei Chu, Ninghao Liu.</p>
+                    <p class="periodical"><em>arXiv preprint, 2026.</em></p>
+                    <div class="links"><a class="btn" href="https://arxiv.org/abs/2606.18101">Paper</a><a class="btn" href="https://arxiv.org/pdf/2606.18101">PDF</a></div>
+                </div>
+            </li>
+            <li class="pub-row">
+                <a class="paper-figure" href="https://aclanthology.org/2025.emnlp-main.910/" aria-label="Read AI Sees Your Location—But With A Bias Toward The Wealthy World">
+                    <img src="assets/img/fairlocator.jpg" alt="Examples of geographical biases studied in FairLocator" loading="lazy" width="240" height="160">
+                    <span class="badge">EMNLP 2025</span>
+                </a>
+                <div class="paper-details">
+                    <h3 class="title"><a class="paper-title" href="https://aclanthology.org/2025.emnlp-main.910/">AI Sees Your Location&mdash;But With A Bias Toward The Wealthy World</a></h3>
+                    <p class="author"><strong>Jingyuan Huang*</strong>, Jen-tse Huang*, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang, Jieyu Zhao.</p>
+                    <p class="periodical"><em>EMNLP 2025 (Main Conference).</em></p>
+                    <div class="links"><a class="btn" href="https://aclanthology.org/2025.emnlp-main.910/">Paper</a><a class="btn" href="https://aclanthology.org/2025.emnlp-main.910.pdf">PDF</a><a class="btn" href="https://github.com/uscnlp-lime/FairLocator">Code</a></div>
+                </div>
+            </li>
+            </ol>
+        </section>
 
-        <!-- Based on the author's Google Scholar profile, checked November 1, 2026.
-             Titles and author lists are checked against the linked primary sources.
-             Use published versions where available; do not duplicate their preprints. -->
-        <h3>2026</h3>
-        <ul class="publication-list">
+        <section class="additional" aria-labelledby="more-publications">
+            <h2 id="more-publications">More Publications</h2>
+        <h3 class="year">2026</h3>
+        <ul class="other-publications">
             <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2610.02710">Self-Supervised Scaling of Terminal Environments for Scientific Domains</a><br>
-                Zhongzhi Li, Yucheng Shi, Zongxia Li, Junyao Yang, Ruhan Wang, Yu Wang, <strong>Jingyuan Huang</strong>, Jichao Yu, Ninghao Liu, Haitao Mi, Leowei Liang.<br>
-                <span class="venue">arXiv preprint, 2026.</span>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2610.02710">Self-Supervised Scaling of Terminal Environments for Scientific Domains</a></h4>
+                <p class="author">Zhongzhi Li, Yucheng Shi, Zongxia Li, Junyao Yang, Ruhan Wang, Yu Wang, <strong>Jingyuan Huang</strong>, Jichao Yu, Ninghao Liu, Haitao Mi, Leowei Liang.</p>
+                <p class="periodical"><em>arXiv preprint, 2026.</em></p>
             </li>
             <li>
-                <!-- Scholar still lists the original title; use the latest arXiv title (v3). -->
-                <a class="paper-title" href="https://arxiv.org/abs/2609.32303">Train4Merge: RL or SFT&mdash;Which Yields Better Teachers for OPD-Based Model Merging?</a><br>
-                <strong>Jingyuan Huang</strong>, Zuming Huang, Yucheng Shi, Zhongzhi Li, Xiaoming Zhai, Wei Chu, Ninghao Liu.<br>
-                <span class="venue">arXiv preprint, 2026.</span>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2606.04391">Online Skill Learning for Web Agents via State-Grounded Dynamic Retrieval</a></h4>
+                <p class="author">Jiaxi Li, Ke Deng, Yun Wang, <strong>Jingyuan Huang</strong>, Yucheng Shi, Qiaoyu Tan, Jin Lu, Ninghao Liu.</p>
+                <p class="periodical"><em>arXiv preprint, 2026.</em></p>
             </li>
             <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2606.18101">Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding</a><br>
-                <strong>Jingyuan Huang</strong>, Zuming Huang, Yucheng Shi, Tianze Yang, Xiaoming Zhai, Wei Chu, Ninghao Liu.<br>
-                <span class="venue">arXiv preprint, 2026.</span>
-            </li>
-            <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2606.04391">Online Skill Learning for Web Agents via State-Grounded Dynamic Retrieval</a><br>
-                Jiaxi Li, Ke Deng, Yun Wang, <strong>Jingyuan Huang</strong>, Yucheng Shi, Qiaoyu Tan, Jin Lu, Ninghao Liu.<br>
-                <span class="venue">arXiv preprint, 2026.</span>
-            </li>
-            <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2606.01599">TRON: Targeted Rule-Verifiable Online Environments for Visual Reasoning RL</a><br>
-                Tianze Yang, Yucheng Shi, Ruitong Sun, <strong>Jingyuan Huang</strong>, Ninghao Liu, Jin Sun.<br>
-                <span class="venue">arXiv preprint, 2026.</span>
-            </li>
-        </ul>
-
-        <h3>2025</h3>
-        <ul class="publication-list">
-            <li>
-                <!-- Published version of the Scholar entry "VLMs as GeoGuessr Masters". -->
-                <a class="paper-title" href="https://aclanthology.org/2025.emnlp-main.910/">AI Sees Your Location&mdash;But With A Bias Toward The Wealthy World</a><br>
-                <strong>Jingyuan Huang*</strong>, Jen-tse Huang*, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang, Jieyu Zhao.<br>
-                <span class="venue">EMNLP 2025 (Main Conference).</span>
-            </li>
-            <li>
-                <a class="paper-title" href="https://aclanthology.org/2025.acl-long.1178/">Asclepius: A Spectrum Evaluation Benchmark for Medical Multi-Modal Large Language Models</a><br>
-                Jie Liu, Wenxuan Wang, Yihang Su, <strong>Jingyuan Huang</strong>, Yudi Zhang, Cheng-Yi Li, Wenting Chen, Xiaohan Xing, Kao-Jung Chang, Linlin Shen, Michael R. Lyu.<br>
-                <span class="venue">ACL 2025 (Long Papers).</span>
-            </li>
-            <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2503.23434">Towards Trustworthy GUI Agents: A Survey</a><br>
-                Yucheng Shi, Wenhao Yu, <strong>Jingyuan Huang</strong>, Wenlin Yao, Wenhu Chen, Ninghao Liu.<br>
-                <span class="venue">arXiv preprint, 2025 (revised 2026).</span>
-            </li>
-        </ul>
-
-        <h3>2024</h3>
-        <ul class="publication-list">
-            <li>
-                <a class="paper-title" href="https://aclanthology.org/2024.acl-long.345/">Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models</a><br>
-                Wenxuan Wang, Wenxiang Jiao, <strong>Jingyuan Huang</strong>, Ruyi Dai, Jen-tse Huang, Zhaopeng Tu, Michael R. Lyu.<br>
-                <span class="venue">ACL 2024 (Long Papers).</span>
-            </li>
-        </ul>
-
-        <h3>2023</h3>
-        <ul class="publication-list">
-            <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2308.09810">An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software</a><br>
-                Wenxuan Wang, <strong>Jingyuan Huang</strong>, Jen-tse Huang, Chang Chen, Jiazhen Gu, Pinjia He, Michael R. Lyu.<br>
-                <span class="venue">ASE 2023.</span>
-            </li>
-            <li>
-                <a class="paper-title" href="https://arxiv.org/abs/2305.13623">Validating Multimedia Content Moderation Software via Semantic Fusion</a><br>
-                Wenxuan Wang, <strong>Jingyuan Huang</strong>, Chang Chen, Jiazhen Gu, Jianping Zhang, Weibin Wu, Pinjia He, Michael R. Lyu.<br>
-                <span class="venue">ISSTA 2023.</span>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2606.01599">TRON: Targeted Rule-Verifiable Online Environments for Visual Reasoning RL</a></h4>
+                <p class="author">Tianze Yang, Yucheng Shi, Ruitong Sun, <strong>Jingyuan Huang</strong>, Ninghao Liu, Jin Sun.</p>
+                <p class="periodical"><em>arXiv preprint, 2026.</em></p>
             </li>
         </ul>
-    </section>
+        <h3 class="year">2025</h3>
+        <ul class="other-publications">
+            <li>
+                <h4><a class="paper-title" href="https://aclanthology.org/2025.acl-long.1178/">Asclepius: A Spectrum Evaluation Benchmark for Medical Multi-Modal Large Language Models</a></h4>
+                <p class="author">Jie Liu, Wenxuan Wang, Yihang Su, <strong>Jingyuan Huang</strong>, Yudi Zhang, Cheng-Yi Li, Wenting Chen, Xiaohan Xing, Kao-Jung Chang, Linlin Shen, Michael R. Lyu.</p>
+                <p class="periodical"><em>ACL 2025 (Long Papers).</em></p>
+            </li>
+            <li>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2503.23434">Towards Trustworthy GUI Agents: A Survey</a></h4>
+                <p class="author">Yucheng Shi, Wenhao Yu, <strong>Jingyuan Huang</strong>, Wenlin Yao, Wenhu Chen, Ninghao Liu.</p>
+                <p class="periodical"><em>arXiv preprint, 2025 (revised 2026).</em></p>
+            </li>
+        </ul>
+        <h3 class="year">2024</h3>
+        <ul class="other-publications">
+            <li>
+                <h4><a class="paper-title" href="https://aclanthology.org/2024.acl-long.345/">Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models</a></h4>
+                <p class="author">Wenxuan Wang, Wenxiang Jiao, <strong>Jingyuan Huang</strong>, Ruyi Dai, Jen-tse Huang, Zhaopeng Tu, Michael R. Lyu.</p>
+                <p class="periodical"><em>ACL 2024 (Long Papers).</em></p>
+            </li>
+        </ul>
+        <h3 class="year">2023</h3>
+        <ul class="other-publications">
+            <li>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2308.09810">An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software</a></h4>
+                <p class="author">Wenxuan Wang, <strong>Jingyuan Huang</strong>, Jen-tse Huang, Chang Chen, Jiazhen Gu, Pinjia He, Michael R. Lyu.</p>
+                <p class="periodical"><em>ASE 2023.</em></p>
+            </li>
+            <li>
+                <h4><a class="paper-title" href="https://arxiv.org/abs/2305.13623">Validating Multimedia Content Moderation Software via Semantic Fusion</a></h4>
+                <p class="author">Wenxuan Wang, <strong>Jingyuan Huang</strong>, Chang Chen, Jiazhen Gu, Jianping Zhang, Weibin Wu, Pinjia He, Michael R. Lyu.</p>
+                <p class="periodical"><em>ISSTA 2023.</em></p>
+            </li>
+        </ul>
+        </section>
 
-    <footer id="footer">
-        <p>Last updated: <time datetime="2026-11-01">November 2026</time>.</p>
-    </footer>
-</main>
+        <footer class="site-footer">
+            <p>Last updated: <time datetime="2026-11-01">November 2026</time>.</p>
+            <p>Based on <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a>.</p>
+        </footer>
+    </main>
+</div>
 </body>
 </html>
