@@ -10,6 +10,7 @@ The homepage uses the static HTML version of [Minimal Light](https://github.com/
 - `assets/css/orange.css`: site-specific layout and color overrides. Change `--accent` and related variables at the top to adjust the palette.
 - `assets/css/minimal-light.css` and `assets/css/publications.css`: upstream Minimal Light styles.
 - `hjy.jpg` and `cv.pdf`: portrait and CV.
+- `assets/js/avatar.js` and `assets/img/avatar-alt.jpg`: click-to-toggle alternate avatar, with an opacity crossfade defined in `orange.css`.
 - `assets/img/`: favicon and publication figures.
 
 Preview locally with `python3 -m http.server 8765 --bind 127.0.0.1`.

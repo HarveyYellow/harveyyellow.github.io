@@ -25,8 +25,14 @@ p { margin: 0 0 16px; }
 
 .wrapper { width: 1080px; max-width: 100%; margin: 0 auto; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 76px; align-items: start; }
 header.profile { width: auto; float: none; position: sticky; top: 48px; padding: 0; margin-top: 72px; text-align: center; }
-.image.avatar { display: inline-block; margin-bottom: 20px; }
-.image.avatar img { display: block; width: 150px; height: 150px; padding: 0; object-fit: cover; border-radius: 50%; border: 5px solid var(--accent-soft); }
+.image.avatar { display: inline-grid; margin-bottom: 20px; padding: 0; border: 5px solid var(--accent-soft); border-radius: 50%; background: var(--accent-soft); overflow: hidden; vertical-align: top; cursor: pointer; }
+.image.avatar img { grid-area: 1 / 1; display: block; width: 140px; height: 140px; padding: 0; object-fit: cover; border-radius: 50%; border: 0; pointer-events: none; transition: opacity 600ms ease-in-out; }
+.avatar-original { opacity: 1; }
+.avatar-alternate { opacity: 0; }
+.avatar-toggle[aria-pressed="true"] .avatar-original { opacity: 0; }
+.avatar-toggle[aria-pressed="true"] .avatar-alternate { opacity: 1; }
+.avatar-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.avatar-toggle:disabled { cursor: default; }
 .profile h1 { margin: 0 0 14px; font-size: 30px; line-height: 1.2; font-weight: 600; }
 .profile .position { color: var(--text-strong); font-size: 18px; line-height: 1.4; margin-bottom: 5px; }
 .profile .affiliation { margin-bottom: 5px; }
@@ -86,7 +92,7 @@ footer.site-footer { float: none; position: static; width: auto; border-top: 1px
     .wrapper, div.wrapper { display: block; max-width: 650px; }
     header.profile { position: static; margin: 0; padding: 38px 0 30px; }
     .image.avatar { margin-bottom: 14px; }
-    .image.avatar img { width: 124px; height: 124px; padding: 0; }
+    .image.avatar img { width: 114px; height: 114px; padding: 0; }
     .social-links { gap: 10px; margin: 20px 0; }
     .section-links { max-width: 300px; margin: 0 auto; gap: 26px; padding-top: 17px; }
     main { padding-top: 20px; }
@@ -103,7 +109,10 @@ footer.site-footer { float: none; position: static; width: auto; border-top: 1px
     .publications .title { font-size: 19px; }
 }
 
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .image.avatar img { transition: none; }
+}
 @media print {
     body { padding: 0; color: #222; }
     .wrapper { display: block; }

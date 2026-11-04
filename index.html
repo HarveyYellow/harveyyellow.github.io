@@ -14,16 +14,19 @@
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/minimal-light.css">
     <link rel="stylesheet" href="assets/css/publications.css">
-    <link rel="stylesheet" href="assets/css/orange.css?v=20261104">
+    <link rel="preload" href="assets/img/avatar-alt.jpg" as="image">
+    <link rel="stylesheet" href="assets/css/orange.css?v=20261104-avatar">
+    <script src="assets/js/avatar.js?v=20261104" defer></script>
     <title>Jingyuan Huang | Computer Science PhD Student at UGA</title>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <div class="wrapper">
     <header class="profile" aria-label="Jingyuan Huang's profile">
-        <a class="image avatar" href="#about-me" aria-label="About Jingyuan Huang">
-            <img src="hjy.jpg" alt="Jingyuan Huang" width="160" height="160">
-        </a>
+        <button class="image avatar avatar-toggle" type="button" aria-label="Show alternate avatar" aria-pressed="false" title="Click to switch avatar" disabled>
+            <img class="avatar-original" src="hjy.jpg" alt="Jingyuan Huang" width="160" height="160">
+            <img class="avatar-alternate" src="assets/img/avatar-alt.jpg" alt="" aria-hidden="true" width="160" height="160" decoding="async">
+        </button>
         <h1>Jingyuan Huang</h1>
         <p class="position">PhD Student in Computer Science</p>
         <p class="affiliation">University of Georgia</p>
